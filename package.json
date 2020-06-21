@@ -21,7 +21,10 @@
   "build": {
     "productName": "洋芋田图像工具箱",
     "appId": "cn.potatofield.imagetoolkit",
-    "artifactName": "potatofield-image-toolkit-${version}.${ext}",
+    "files": [
+			"!**/*",
+			"./bundle/**/*"
+		],
     "releaseInfo": {
       "releaseNotes": "富文本制图工具支持自定义输出图片宽度。\n修复了屏幕缩放比例过小时界面显示异常的问题。"
     },
