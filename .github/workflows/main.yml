@@ -23,6 +23,7 @@ jobs:
         uses: samuelmeuli/action-electron-builder@v1
         with:
           use_vue_cli: true
+          skip_build: false
           args: "node .electron-vue/build.js && electron-builder"
           # GitHub token, automatically provided to the action
           # (No need to define this secret in the repo settings)
